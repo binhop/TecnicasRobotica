@@ -51,9 +51,6 @@ def RobotFollowPath(path, start_angle):
         # Descobre o angulo da direção do movimento
         angle = (motion_y != 0)*(motion_y+2)*90 + \
                 (motion_x != 0)*abs(motion_x-1)*90
-        # Futuramente: movimentação diagonal (media dos angulos)
-        # angle = ((motion_y != 0)*(motion_y+2)*90 + \
-        #          (motion_x != 0)*abs(motion_x-1)*90)//2
 
         # Diferença entre o angulo do robo e do movimento
         delta_ang = start_angle - angle

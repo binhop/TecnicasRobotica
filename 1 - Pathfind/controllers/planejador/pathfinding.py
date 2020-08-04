@@ -49,7 +49,9 @@ class Pathfind():
         path.reverse()
         return path
 
-
+    '''
+        Algoritmo de busca do melhor caminho
+    '''
     def path_plan(self, start_pos, goal_pos, map):
         # Nós abertos: x, y, custo, index do no de origem
         open = [[start_pos[0], start_pos[1], 0, 0]]
